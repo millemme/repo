@@ -8,6 +8,9 @@ class Test_hw7_fizz(unittest.TestCase):
     def test_fizz(self):
         result = hw7_fizz.fizz_buzz(3)
         self.assertEqual(result, "Fizz")
+    def test_fizz(self):
+        result = hw7_fizz.fizz_buzz(5)
+        self.assertEqual(result, "Buzz")
 
 if __name__ == '__main__':
     unittest.main()
