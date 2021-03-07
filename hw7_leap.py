@@ -1,7 +1,10 @@
 def leap_year(x):
     if (x % 4 == 0):
         if (x % 100 == 0):
-            return "no"
+            if (x % 400 == 0):
+                return "yes"
+            else:
+                return "no"
         else:
             return "yes"
     else:
